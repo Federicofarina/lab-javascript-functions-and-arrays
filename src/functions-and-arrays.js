@@ -20,7 +20,7 @@ function findLongestWord(words) {
   if (!words.length) {     
     return null;   
   } else {     
-    //let maxIndex = 0;
+    let maxIndex = 0;
     let maxLength = 0;           
     words.forEach((element, index) => {       
       if (maxLength < element.length) {         
@@ -42,13 +42,7 @@ function sumNumbers(numbers) {
     return null;
   }
   else {
-
     let sumResult=0;
-
-    //numbers.forEach(function (element) {
-      //sumResult += element;
-    //});
-
     numbers.forEach((element) =>{
       sumResult = sumResult + element
     })
@@ -56,35 +50,32 @@ function sumNumbers(numbers) {
 
     }
   }
-
-
-
-
 // Iteration #3.1 Bonus:
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 
 function sum(mixedArr) {
-    if (!mixedArr.length) {
-      return 0;
-    }
-    else {
-
-      let sumResult=[0];
-      mixedArr.forEach((element) =>{
-        sumResult[0] += element
-      })
-      return sumResult;
-  
-      }
+  if (!mixedArr.length) {
+    return 0;
   }
-
-
-
+  }
+  
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersAvg) {
+  if (!numbersAvg.length){
+    return null;
+  }else{
+    function averageNumbers(numbersAvg){
+      const sum = numbersAvg.reduce((acc, curr) => acc + curr, 0);
+      const count = numbersAvg.length;
+      const avg = total / count;
+      return avg
+      
+    }
+}
+}
 
 
 // Level 2: Array of strings
